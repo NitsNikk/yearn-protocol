@@ -8,8 +8,8 @@
         "pretty-quick": "^3.0.2"
     },
     "scripts": {
-        "lint:check": "pretty-quick --check --verbose --pattern **/*.sol **/*.json",
-        "lint:fix": "pretty-quick --staged --verbose --pattern **/*.sol **/*.json"
+        "lint:check": "prettier --check **/*.sol **/*.json",
+        "lint:fix": "pretty-quick --pattern '**/*.*(sol|json)' --staged --verbose"
     },
     "husky": {
         "hooks": {
