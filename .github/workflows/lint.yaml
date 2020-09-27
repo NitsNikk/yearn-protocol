@@ -30,7 +30,7 @@ jobs:
         run: yarn
 
       - name: Run linter on *.sol and *.json
-        run: yarn run lint:check
+        run: yarn lint:check
 
     brownie:
       runs-on: ubuntu-latest
